@@ -1,4 +1,4 @@
-# E-stanteBooks
+# 📚E-stanteBooks
 Estante de livros virtual para organização das leituras, projeto feito em HTML, CSS e JavaScript.
 
-##Projeto ainda em Desenvolvimento...
+## 🔧Projeto ainda em Desenvolvimento...
