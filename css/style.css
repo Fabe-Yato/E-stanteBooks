@@ -173,7 +173,7 @@ main{
 
     transition: 1s;
 }
-.mensagem-inicial{
+#mensagem-inicial{
     width: 28%;
     margin-left: 36%;
     margin-top: 20%;
@@ -217,4 +217,19 @@ main{
     width: 80%;
     margin-top: 2%;
     font-size: 1rem;
+}
+#conteudo-principal2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 85%;
+    margin-left: 15%; 
+    color: rgb(184, 184, 184);
+}  
+.img-minhaLista{
+    width: 170px;
+    height: 240px;
+    border: 2px solid white;
+
+    margin-top: 2.3%;
+    margin-left: 8%;
 }
