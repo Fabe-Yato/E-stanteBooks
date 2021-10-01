@@ -4,6 +4,10 @@ var listaLivros = [
         img: "img/Coraline.jpg",
         paginas: 224
     },
+    algoritmos = {
+        img: "img/algoritmos.jpg",
+        paginas: 272,
+    },
     Redes ={
         img: "img/redes-de-computadores.jpg",
         paginas: 600,
