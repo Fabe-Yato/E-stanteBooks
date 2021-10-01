@@ -1,5 +1,17 @@
 //lista de livros totais do site
 var listaLivros = [
+    Coraline = {
+        img: "img/Coraline.jpg",
+        paginas: 224
+    },
+    Redes ={
+        img: "img/redes-de-computadores.jpg",
+        paginas: 600,
+    },
+    RainhaVermelha = {
+        img: "img/A-rainha-vermelha.jpg",
+        paginas: 424,
+    }, 
     assassinsCreed = {
       img:"img/81qFdOvnxaL.jpg",
       paginas: 336,
@@ -31,7 +43,8 @@ var listaLivros = [
     TheWalkingDead = {
         img: "img/TWD.jpg",
         paginas: 266,
-    }];
+    }
+];
 
 //array para guardar os livros que estão na lista do usuario    
 var LivrosEscolhidos = [];
@@ -50,13 +63,16 @@ for(var i = 0; i < listaLivros.length; i++){
              
             if(plus == document.querySelectorAll(".fa-plus")[index]){
                  LivrosEscolhidos.push(listaLivros[index]);
-                
-                 //craindo um elemento img para a lista do usuário
+                 
+                 let divMinhaLista = document.createElement("div");
+                //  divMinhaLista.classList.add("livros-minhaLista");
+                 //criando um elemento img para a lista do usuário
                  let conteudoMinhaLista = document.createElement("img");
                  
                  //trocando as imagens de acordo com o livro adicionado pelo usuario
                  conteudoMinhaLista.src = listaLivros[index].img;
                  conteudoMinhaLista.classList.add("img-minhaLista");
+
                    
                  let paginasLidas = document.querySelector(".paginas-lidas");
                  
@@ -66,14 +82,22 @@ for(var i = 0; i < listaLivros.length; i++){
                  paginasLidas.innerHTML = total + " Páginas Lidas"
 
                  let quantidadeLivros = document.querySelector(".quantidade-livros");
+
                  quantidadeLivros.innerHTML = "Nº Livros: " + LivrosEscolhidos.length;
                  
+               
                  //adicionando o conteudo dentro do conteudoprincipal
                  let conteudoprincipal = document.querySelector(".conteudo-principal2");
-                 conteudoprincipal.appendChild(conteudoMinhaLista);
+                 conteudoprincipal.appendChild(divMinhaLista);
+
+                 let bolinhas = document.createElement("div");
+                 bolinhas.classList.add("bolinha-verde-lista");
+
+                 divMinhaLista.appendChild(bolinhas); 
+                 divMinhaLista.appendChild(conteudoMinhaLista);
+                 console.log(conteudoprincipal)
                  
             }
         }
     })
 }
-

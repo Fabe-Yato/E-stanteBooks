@@ -20,3 +20,18 @@ explorar.addEventListener("click", function(){
     livros.style.display = "grid";
     textoPadrao.style.display = "none";
 })
+
+var subLogo = document.querySelector(".sub-logo");
+
+var typewriter = (elemento) => {
+    const textoArray = elemento.innerHTML.split('');
+    elemento.innerHTML = "";
+    textoArray.forEach((escreva, i) => {
+        setTimeout(function(){
+              elemento.innerHTML += escreva;
+        },75 * i);
+    }); 
+}
+
+typewriter(subLogo);
+

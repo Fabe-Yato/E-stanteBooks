@@ -38,7 +38,17 @@ body{
     margin-top: 4%;
     font-size: 15px;
 
-    border-right: 1px solid white;
+    /* border-right: 1px solid white; */
+    animation: piscando 1s infinite;
+}
+@keyframes piscando{
+    0%{
+        border-right: none;
+        
+    }
+    100%{
+        border-right: 3px solid white;
+    }
 }
 .pesquisa{
     position: absolute;
@@ -141,7 +151,7 @@ main{
     justify-content: center;
 
     width: 15%; 
-    height: 85vh; 
+    height: 80vh; 
 
     background-color: #415481;
     color: white;
@@ -156,7 +166,7 @@ main{
 }
 .generos{
     width: 75px;
-    padding: 14%;
+    padding: 13%;
     border-bottom: 2px solid white;
     border-width: 1px;
     list-style-type: none;
@@ -214,15 +224,24 @@ main{
     margin-left: 22%;
 }
 .nome-livro{
-    width: 80%;
+    width: 85%;
     margin-top: 2%;
     font-size: 1rem;
 }
-#conteudo-principal2{
+/* #conteudo-principal2{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     width: 85%;
     margin-left: 15%; 
+    color: rgb(184, 184, 184);
+    background-color: blue;
+}   */
+.conteudo-principal2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 90%;
+    margin-left: 5%; 
+    margin-top: 2%;
     color: rgb(184, 184, 184);
 }  
 .img-minhaLista{
@@ -230,6 +249,17 @@ main{
     height: 240px;
     border: 2px solid white;
 
-    margin-top: 2.3%;
+    margin-top: 2.5%;
     margin-left: 8%;
+}
+.bolinha-verde-lista{
+    position: absolute; 
+    background-color: rgb(4, 160, 4);
+    width:25px;
+    height: 25px;
+    
+    margin-top: 1%;
+    margin-left: -1%; 
+    
+    border-radius: 50%;
 }
